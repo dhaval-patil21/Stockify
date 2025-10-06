@@ -360,9 +360,9 @@ import {
   IndianRupee,
 } from 'lucide-react';
 
-import { TradingViewWidget } from '../components/tradingview-widget';
-import { MarketOverviewWidget} from '../components/tradingview-widget';
-import { StockChart} from '../components/stock-chart';
+import { TradingViewWidget } from './tradingview-widget';
+import { MarketOverviewWidget} from './tradingview-widget';
+import { StockChart} from './stock-chart';
 
 const StockifyDashboard = () => {
   const [activeTab, setActiveTab] = useState('market');
