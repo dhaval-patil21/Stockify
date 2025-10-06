@@ -6,7 +6,6 @@ import Link from "next/link";
 import logo from "../../public/stockify_logo.png";
 
 const Footer = () => {
-  const [currentPage, setCurrentPage] = useState("home");
   const [currenthref,setCurrenthref] = useState("")
 
   const navigation = [
