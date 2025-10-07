@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ArrowRight, BarChart3, Activity, Eye } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -23,7 +23,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                onClick={() => setCurrentPage("/stocks")}
+                href="/stocks"
                 className="bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <span>Start Analyzing</span>
@@ -146,4 +146,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection
+export default HeroSection;
