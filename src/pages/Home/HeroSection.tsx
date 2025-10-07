@@ -414,7 +414,7 @@ import { useState, useEffect, useRef, memo } from "react";
 
 // TradingView Widget Component
 const TradingViewWidget = memo(() => {
-  const container = useRef();
+  const container = useRef(null);
   
   useEffect(() => {
     const script = document.createElement("script");
