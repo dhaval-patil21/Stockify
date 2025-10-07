@@ -546,7 +546,7 @@ const StockifyDashboard = () => {
                   : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
-              <div className="flex items-center justify-center space-x-2">
+              <div className="flex items-center text-black justify-center space-x-2">
                 <TrendingUp size={20} />
                 <span>Market Overview</span>
               </div>
@@ -559,7 +559,7 @@ const StockifyDashboard = () => {
                   : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
-              <div className="flex items-center justify-center space-x-2">
+              <div className="flex items-center text-black justify-center space-x-2">
                 <Star size={20} />
                 <span>My Watchlist</span>
                 {watchlist.length > 0 && (
