@@ -542,8 +542,8 @@ const StockifyDashboard = () => {
               onClick={() => setActiveTab('market')}
               className={`flex-1 py-3 px-6 rounded-lg font-semibold ${
                 activeTab === 'market'
-                  ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-md'
-                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                  ? 'bg-white text-blue-600 dark:text-blue-400 shadow-md'
+                  : 'text-gray-600  hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
               <div className="flex items-center justify-center space-x-2">
