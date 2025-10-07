@@ -14,10 +14,10 @@ const HeroSection = () => {
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
               {/* Simplified Stock Strategies */}
-              Making Stock Analysis
+              Effortless Stock Analysis
               <span className="block text-emerald-600">
                 {/* for Smarter Investors */}
-                Effortless and Insightful
+                for Smarter Investments
               </span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">

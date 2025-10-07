@@ -427,7 +427,7 @@ const StockifyDashboard = () => {
   };
 
   const StockDetailsModal = ({ stock, onClose }) => (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
+    <div className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
       <div className="bg-card rounded-2xl max-w-7xl w-full max-h-[95vh] overflow-y-auto">
         <div className="sticky top-0 bg-gradient-to-r from-blue-600 to-green-500 text-white p-6 rounded-t-2xl z-10">
           <div className="flex justify-between items-start">
@@ -475,7 +475,7 @@ const StockifyDashboard = () => {
 
         <div className="p-6 space-y-6">
           <div className="bg-muted rounded-xl p-4">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+            <h3 className="text-xl font-bold text-black mb-4 flex items-center">
               <IndianRupee className="mr-2 text-blue-600" />
               Live Price & Info
             </h3>
@@ -483,7 +483,7 @@ const StockifyDashboard = () => {
           </div>
 
           <div className="bg-muted rounded-xl p-4">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+            <h3 className="text-xl font-bold text-black mb-4 flex items-center">
               <LineChart className="mr-2 text-green-600" />
               Price Chart (5 Years)
             </h3>
@@ -499,7 +499,7 @@ const StockifyDashboard = () => {
           </div>
 
           <div className="bg-muted rounded-xl p-4">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+            <h3 className="text-xl font-bold text-black mb-4 flex items-center">
               <TrendingUp className="mr-2 text-orange-600" />
               Technical Analysis
             </h3>
