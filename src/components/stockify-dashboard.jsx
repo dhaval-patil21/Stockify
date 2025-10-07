@@ -519,7 +519,7 @@ const StockifyDashboard = () => {
           <div className="flex items-center justify-between mb-6">
             <form onSubmit={handleSearch} className="flex items-center space-x-2">
               <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 " size={20} />
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black " size={20} />
                 <input
                   type="text"
                   placeholder="Search stocks (RELIANCE, SBIN, TCS...)"
