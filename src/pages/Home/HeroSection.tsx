@@ -134,12 +134,12 @@ const HeroSection = () => {
             Join thousands of investors who trust Stockify for their market
             analysis needs.
           </p>
-          <button
-            onClick={() => setCurrentPage("stocks")}
+          <Link
+            href="/stocks"
             className="bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Get Started Free
-          </button>
+          </Link>
         </div>
       </section>
     </div>
