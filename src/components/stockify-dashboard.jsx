@@ -527,7 +527,7 @@ const StockifyDashboard = () => {
               </div>
               <button
                 type="submit"
-                className="px-6 py-3 bg-blue-600 text-white rounded-xl font-medium shadow-md hover:shadow-lg transform hover:scale-105 transition-all"
+                className="px-6 py-3 bg-blue-500 text-white rounded-xl font-medium shadow-md hover:shadow-lg transform hover:scale-105 transition-all"
               >
                 Search
               </button>
