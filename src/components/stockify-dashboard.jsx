@@ -514,7 +514,7 @@ const StockifyDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b bg-white/80 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
+      <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between mb-6">
             <form onSubmit={handleSearch} className="flex items-center space-x-2">
@@ -542,8 +542,8 @@ const StockifyDashboard = () => {
               onClick={() => setActiveTab('market')}
               className={`flex-1 py-3 px-6 rounded-lg font-semibold ${
                 activeTab === 'market'
-                  ? 'bg-white text-blue-600 dark:text-blue-600 shadow-md'
-                  : 'text-gray-600  hover:text-gray-900 dark:hover:text-gray-200'
+                  ? 'bg-white dark:bg-gray-500 text-blue-600 dark:text-blue-400 shadow-md'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
               <div className="flex items-center justify-center space-x-2">
@@ -555,8 +555,8 @@ const StockifyDashboard = () => {
               onClick={() => setActiveTab('watchlist')}
               className={`flex-1 py-3 px-6 rounded-lg font-semibold ${
                 activeTab === 'watchlist'
-                  ? 'bg-white  text-green-600 dark:text-green-400 shadow-md'
-                  : 'text-gray-600  hover:text-gray-900 dark:hover:text-gray-200'
+                  ? 'bg-white dark:bg-gray-500 text-green-600 dark:text-green-400 shadow-md'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
               <div className="flex items-center justify-center space-x-2">
