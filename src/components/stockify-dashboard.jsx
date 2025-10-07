@@ -542,7 +542,7 @@ const StockifyDashboard = () => {
               onClick={() => setActiveTab('market')}
               className={`flex-1 py-3 px-6 rounded-lg font-semibold ${
                 activeTab === 'market'
-                  ? 'bg-white dark:bg-gray-500 text-blue-600 dark:text-blue-400 shadow-md'
+                  ? 'bg-white dark:bg-gray-300 text-blue-600 dark:text-blue-400 shadow-md'
                   : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
@@ -555,7 +555,7 @@ const StockifyDashboard = () => {
               onClick={() => setActiveTab('watchlist')}
               className={`flex-1 py-3 px-6 rounded-lg font-semibold ${
                 activeTab === 'watchlist'
-                  ? 'bg-white dark:bg-gray-500 text-green-600 dark:text-green-600 shadow-md'
+                  ? 'bg-white dark:bg-gray-300 text-green-600 dark:text-green-600 shadow-md'
                   : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
