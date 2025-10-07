@@ -441,8 +441,10 @@ const TradingViewWidget = memo(() => {
         "width": "100%",
         "height": "100%"
       }`;
-    container.current.appendChild(script);
-  }, []);
+   if (container.current) {
+    container.current.appendChild(script); // Null check to ensure it's not null
+  }
+}, []);
 
   return (
     <div className="tradingview-widget-container h-full w-full" ref={container}>
