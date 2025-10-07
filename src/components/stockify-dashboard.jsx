@@ -522,12 +522,12 @@ const StockifyDashboard = () => {
                   placeholder="Search stocks (RELIANCE, SBIN, TCS...)"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 pr-4 py-3 w-80 border-2 border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-foreground shadow-sm"
+                  className="pl-10 pr-4 py-2 w-80 border-2 border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-foreground shadow-sm"
                 />
               </div>
               <button
                 type="submit"
-                className="px-6 py-3 bg-blue-500 text-white rounded-xl font-medium shadow-md hover:shadow-lg transform hover:scale-105 transition-all"
+                className="px-4 py-2 bg-blue-500 text-white rounded-xl font-medium shadow-md hover:shadow-lg transform hover:scale-105 transition-all"
               >
                 Search
               </button>
