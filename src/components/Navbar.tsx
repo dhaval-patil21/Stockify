@@ -73,7 +73,7 @@ const Navbar = () => {
           <div className="md:hidden border-t border-slate-200">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navigation.map((item) => (
-                <button
+                <Link
                   key={item.name}
                   onClick={() => {
                     setCurrentPage(item.href);
@@ -86,7 +86,7 @@ const Navbar = () => {
                   }`}
                 >
                   {item.name}
-                </button>
+                </Link>
               ))}
             </div>
           </div>
