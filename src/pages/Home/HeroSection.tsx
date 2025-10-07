@@ -13,8 +13,12 @@ const HeroSection = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-              Smart Stock Analysis
-              <span className="block text-emerald-600">Made Simple</span>
+              {/* Simplified Stock Strategies */}
+              Making Stock Analysis
+              <span className="block text-emerald-600">
+                {/* for Smarter Investors */}
+                Effortless and Insightful
+              </span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
               Discover, analyze, and track stocks with our comprehensive
@@ -93,7 +97,7 @@ const HeroSection = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-slate-900 text-white">
+      {/* <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -122,7 +126,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
