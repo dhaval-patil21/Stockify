@@ -406,41 +406,48 @@
 
 
 
+
 'use client';
 
 import { ArrowRight, BarChart3, Activity, Eye } from "lucide-react";
-import { useState, useEffect, useRef, memo } from "react";
+import { useEffect, useRef, memo } from "react";
 
 // TradingView Widget Component
-const TradingViewWidget = memo(() => {
-  const container = useRef();
+const TradingViewWidget = memo(function TradingViewWidget() {
+  const container = useRef(null);
   
   useEffect(() => {
+    if (!container.current) return;
+    
     const script = document.createElement("script");
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js";
     script.type = "text/javascript";
     script.async = true;
-    script.innerHTML = `
-      {
-        "dataSource": "SENSEX",
-        "blockSize": "market_cap_basic",
-        "blockColor": "change",
-        "grouping": "sector",
-        "locale": "en",
-        "symbolUrl": "",
-        "colorTheme": "light",
-        "exchanges": [
-          "BSE"
-        ],
-        "hasTopBar": false,
-        "isDataSetEnabled": false,
-        "isZoomEnabled": true,
-        "hasSymbolTooltip": true,
-        "isMonoSize": false,
-        "width": "100%",
-        "height": "100%"
-      }`;
+    script.innerHTML = JSON.stringify({
+      dataSource: "SENSEX",
+      blockSize: "market_cap_basic",
+      blockColor: "change",
+      grouping: "sector",
+      locale: "en",
+      symbolUrl: "",
+      colorTheme: "light",
+      exchanges: ["BSE"],
+      hasTopBar: false,
+      isDataSetEnabled: false,
+      isZoomEnabled: true,
+      hasSymbolTooltip: true,
+      isMonoSize: false,
+      width: "100%",
+      height: "100%"
+    });
+    
     container.current.appendChild(script);
+    
+    return () => {
+      if (container.current) {
+        container.current.innerHTML = '';
+      }
+    };
   }, []);
 
   return (
@@ -449,8 +456,6 @@ const TradingViewWidget = memo(() => {
     </div>
   );
 });
-
-TradingViewWidget.displayName = 'TradingViewWidget';
 
 export default function HeroSection() {
   return (
