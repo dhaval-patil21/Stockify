@@ -39,7 +39,7 @@ const Navbar = () => {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  href={item.href}
+                  href={item.href || "#"}
                   onClick={() => setCurrentPage(item.href)}
                   className={`px-4 py-2 rounded-lg text-md font-medium cursor-pointer transition-all duration-300 ${
                     currentPage === item.href
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   onClick={() => {
-                    setCurrentPage(item.href);
+                    setCurrentPage(item.href || "#");
                     setMobileMenuOpen(false);
                   }}
                   className={`block w-full text-left px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
