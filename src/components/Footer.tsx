@@ -6,7 +6,7 @@ import Link from "next/link";
 import logo from "../../public/stockify_logo.png";
 
 const Footer = () => {
-  const [currenthref,setCurrenthref] = useState("")
+  const [currenthref, setCurrenthref] = useState("");
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -56,12 +56,17 @@ const Footer = () => {
             <ul className="space-y-2">
               {navigation.map((item) => (
                 <li key={item.name}>
-                  <Link
-                    onClick={() => setCurrenthref(item.href)}
-                    className="text-slate-300 hover:text-emerald-400 transition-colors"
-                  >
-                    {item.name}
-                  </Link>
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      onClick={() => setCurrenthref(item.href)}
+                      className="text-slate-300 hover:text-emerald-400 transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <span>{item.name}</span> // Fallback or warning if href is undefined
+                  )}
                 </li>
               ))}
             </ul>
