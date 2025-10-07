@@ -406,15 +406,14 @@
 
 
 
+'use client';
 
-
-"use client";
 import { ArrowRight, BarChart3, Activity, Eye } from "lucide-react";
 import { useState, useEffect, useRef, memo } from "react";
 
 // TradingView Widget Component
 const TradingViewWidget = memo(() => {
-  const container = useRef(null);
+  const container = useRef();
   
   useEffect(() => {
     const script = document.createElement("script");
@@ -441,10 +440,8 @@ const TradingViewWidget = memo(() => {
         "width": "100%",
         "height": "100%"
       }`;
-   if (container.current) {
-    container.current.appendChild(script); // Null check to ensure it's not null
-  }
-}, []);
+    container.current.appendChild(script);
+  }, []);
 
   return (
     <div className="tradingview-widget-container h-full w-full" ref={container}>
@@ -453,9 +450,9 @@ const TradingViewWidget = memo(() => {
   );
 });
 
-const HeroSection = () => {
-  const [currentPage, setCurrentPage] = useState("home");
+TradingViewWidget.displayName = 'TradingViewWidget';
 
+export default function HeroSection() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Transparent Widget Overlay */}
@@ -491,41 +488,13 @@ const HeroSection = () => {
                   <span>Start Analyzing</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                {/* <button className="bg-white/80 backdrop-blur-sm border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold hover:border-emerald-600 hover:text-emerald-600 transition-all duration-300">
-                  Watch Demo
-                </button> */}
               </div>
-
-              {/* Quick Stats */}
-              {/* <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-slate-200/50">
-                  <div className="text-3xl font-bold text-emerald-600">10K+</div>
-                  <div className="text-sm text-slate-600">Stocks Tracked</div>
-                </div>
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-slate-200/50">
-                  <div className="text-3xl font-bold text-emerald-600">99.9%</div>
-                  <div className="text-sm text-slate-600">Uptime</div>
-                </div>
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-slate-200/50">
-                  <div className="text-3xl font-bold text-emerald-600">24/7</div>
-                  <div className="text-sm text-slate-600">Live Data</div>
-                </div>
-              </div> */}
             </div>
 
-            {/* Right Side - Semi-Transparent Widget */}
+            {/* Right Side - Live Widget */}
             <div className="relative">
-              <div className="">
-                {/* <div className="bg-gradient-to-r from-emerald-600/90 to-teal-600/90 backdrop-blur-sm px-6 py-4 rounded-2xl mb-2">
-                  <h3 className="text-white font-semibold text-lg flex items-center gap-2">
-                    <BarChart3 className="w-5 h-5" />
-                    Live Market Heatmap
-                  </h3>
-                  <p className="text-emerald-100 text-sm mt-1">SENSEX Real-Time Performance</p>
-                </div> */}
-                <div className="h-96 lg:h-[500px] rounded-2xl overflow-hidden">
-                  <TradingViewWidget />
-                </div>
+              <div className="h-96 lg:h-[500px] rounded-2xl overflow-hidden">
+                <TradingViewWidget />
               </div>
             </div>
           </div>
@@ -604,6 +573,4 @@ const HeroSection = () => {
       </section>
     </div>
   );
-};
-
-export default HeroSection;
+}
