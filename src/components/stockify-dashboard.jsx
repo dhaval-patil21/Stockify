@@ -525,7 +525,7 @@ const StockifyDashboard = () => {
                   placeholder="Search stocks (RELIANCE, SBIN, TCS...)"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 pr-4 py-2 w-80 border-2 border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-foreground shadow-sm"
+                  className="pl-10 pr-4 py-2 w-80 border-2 border-gray-200  rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-foreground shadow-sm"
                 />
               </div>
               <button
@@ -555,7 +555,7 @@ const StockifyDashboard = () => {
               onClick={() => setActiveTab('watchlist')}
               className={`flex-1 py-3 px-6 rounded-lg font-semibold ${
                 activeTab === 'watchlist'
-                  ? 'bg-white dark:bg-gray-500 text-green-600 dark:text-green-400 shadow-md'
+                  ? 'bg-white dark:bg-gray-500 text-green-600 dark:text-green-600 shadow-md'
                   : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
