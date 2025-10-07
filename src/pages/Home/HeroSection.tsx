@@ -1,5 +1,6 @@
 "use client"
 import { ArrowRight, BarChart3, Activity, Eye } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const HeroSection = () => {
@@ -21,13 +22,13 @@ const HeroSection = () => {
               perfect watchlist.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => setCurrentPage("stocks")}
+              <Link
+                onClick={() => setCurrentPage("/stocks")}
                 className="bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <span>Start Analyzing</span>
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
               <button className="border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300">
                 Watch Demo
               </button>
