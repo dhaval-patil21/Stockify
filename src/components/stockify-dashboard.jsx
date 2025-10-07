@@ -648,10 +648,11 @@ const StockifyDashboard = () => {
                 ))}
               </div>
             )}
+            <FundamentalGuide/>
           </div>
-        )}
+        )} 
       </main>
-      <FundamentalGuide/>
+     
 
       {selectedStock && (
         <StockDetailsModal stock={selectedStock} onClose={() => setSelectedStock(null)} />
