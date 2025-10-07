@@ -490,7 +490,7 @@ const StockifyDashboard = () => {
             <StockChart symbol={stock.symbol} height="600px" width="1000px" />
           </div>
 
-          <div className="bg-muted from-blue-50 to-green-50 dark:from-blue-950 dark:to-green-950 rounded-xl p-4">
+          <div className="bg-muted from-blue-50 to-green-50 rounded-xl p-4">
             <h3 className="text-xl font-bold text-black mb-4 flex items-center">
               <BarChart2 className="mr-2 text-purple-600" />
               Fundamental Analysis
@@ -542,8 +542,8 @@ const StockifyDashboard = () => {
               onClick={() => setActiveTab('market')}
               className={`flex-1 py-3 px-6 rounded-lg font-semibold ${
                 activeTab === 'market'
-                  ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-md'
-                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                  ? 'bg-white  text-blue-600 dark:text-blue-400 shadow-md'
+                  : 'text-gray-600  hover:text-gray-900 dark:hover:text-gray-200'
               }`}
             >
               <div className="flex items-center justify-center space-x-2">
