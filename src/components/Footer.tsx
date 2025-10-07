@@ -9,7 +9,7 @@ const Footer = () => {
   const [currenthref,setCurrenthref] = useState("")
 
   const navigation = [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "Stocks", href: "/stocks" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
@@ -56,12 +56,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {navigation.map((item) => (
                 <li key={item.name}>
-                  <button
+                  <Link
                     onClick={() => setCurrenthref(item.href)}
                     className="text-slate-300 hover:text-emerald-400 transition-colors"
                   >
                     {item.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>

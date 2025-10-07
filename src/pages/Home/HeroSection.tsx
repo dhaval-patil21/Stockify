@@ -29,9 +29,9 @@ const HeroSection = () => {
                 <span>Start Analyzing</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <button className="border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300">
+              {/* <Link className="border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300">
                 Watch Demo
-              </button>
+              </Link> */}
             </div>
           </div>
         </div>
