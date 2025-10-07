@@ -490,7 +490,7 @@ const StockifyDashboard = () => {
             <StockChart symbol={stock.symbol} height="600px" width="1000px" />
           </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-950 dark:to-green-950 rounded-xl p-4">
+          <div className="bg-muted from-blue-50 to-green-50 dark:from-blue-950 dark:to-green-950 rounded-xl p-4">
             <h3 className="text-xl font-bold text-black mb-4 flex items-center">
               <BarChart2 className="mr-2 text-purple-600" />
               Fundamental Analysis
