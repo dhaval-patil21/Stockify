@@ -525,7 +525,7 @@ const StockifyDashboard = () => {
                   placeholder="Search stocks (RELIANCE, SBIN, TCS...)"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 pr-4 py-2 w-80 border-2 border-gray-200 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white  text-foreground shadow-sm"
+                  className="pl-10 pr-4 py-2 w-80 border-2  text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white shadow-sm"
                 />
               </div>
               <button
