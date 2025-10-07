@@ -43,7 +43,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #121212; /* Dark background color */
+    --background: #f0f0f0; /* Dark background color */
     --foreground: #f0f0f0;  /* Light text color for better contrast */
   }
 }
