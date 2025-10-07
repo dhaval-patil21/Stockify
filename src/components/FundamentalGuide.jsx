@@ -248,7 +248,7 @@ const FundamentalsGuide = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-6 mt-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-slate-900 min-h-screen">
+    <div className="max-w-7xl mx-auto p-6 mt-20 bg-gradient-to-br from-slate-50 to-blue-50  min-h-screen">
       <div className="mb-8 text-center">
         <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-3">
           Stock Fundamentals Analysis Guide
