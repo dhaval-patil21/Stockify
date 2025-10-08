@@ -253,13 +253,13 @@ const FundamentalsGuide = () => {
         <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-3">
           Stock Fundamentals Analysis Guide
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 text-lg">
+        <p className="text-gray-600  text-lg">
           Master the key metrics to identify quality stocks
         </p>
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap gap-2 mb-6 bg-white dark:bg-gray-800 rounded-xl p-2 shadow-lg">
+      <div className="flex flex-wrap gap-2 mb-6 bg-white  rounded-xl p-2 shadow-lg">
         {tabs.map((tab) => {
           const Icon = tab.icon;
           return (
@@ -269,7 +269,7 @@ const FundamentalsGuide = () => {
               className={`flex-1 min-w-[150px] flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === tab.id
                   ? 'bg-gradient-to-r from-blue-600 to-green-600 text-white shadow-md'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  : 'bg-gray-100  text-gray-700 dark:text-gray-300 hover:bg-gray-200 '
               }`}
             >
               <Icon size={20} />
@@ -301,7 +301,7 @@ const FundamentalsGuide = () => {
           return (
             <div
               key={metric.id}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl"
+              className="bg-white  rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl"
             >
               <button
                 onClick={() => toggleMetric(metric.id)}
@@ -324,9 +324,9 @@ const FundamentalsGuide = () => {
               </button>
 
               {isExpanded && (
-                <div className="px-6 pb-6 space-y-6 border-t dark:border-gray-700">
+                <div className="px-6 pb-6 space-y-6 border-t ">
                   {/* Formula */}
-                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 mt-4">
+                  <div className="bg-blue-50  rounded-lg p-4 mt-4">
                     <h4 className="font-semibold text-blue-900 dark:text-blue-300 mb-2">
                       Formula
                     </h4>
@@ -341,7 +341,7 @@ const FundamentalsGuide = () => {
                       How to Interpret
                     </h4>
                     <div className="grid md:grid-cols-3 gap-3">
-                      <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500">
+                      <div className="bg-green-50  rounded-lg p-4 border-l-4 border-green-500">
                         <div className="font-semibold text-green-700 dark:text-green-400 mb-1">
                           High Value
                         </div>
@@ -349,7 +349,7 @@ const FundamentalsGuide = () => {
                           {metric.interpretation.high}
                         </p>
                       </div>
-                      <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
+                      <div className="bg-red-50  rounded-lg p-4 border-l-4 border-red-500">
                         <div className="font-semibold text-red-700 dark:text-red-400 mb-1">
                           Low Value
                         </div>
@@ -357,7 +357,7 @@ const FundamentalsGuide = () => {
                           {metric.interpretation.low}
                         </p>
                       </div>
-                      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border-l-4 border-blue-500">
+                      <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                         <div className="font-semibold text-blue-700 dark:text-blue-400 mb-1">
                           Ideal Range
                         </div>
@@ -369,23 +369,23 @@ const FundamentalsGuide = () => {
                   </div>
 
                   {/* Example */}
-                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg p-5">
-                    <h4 className="font-semibold text-purple-900 dark:text-purple-300 mb-3 flex items-center gap-2">
+                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-5">
+                    <h4 className="font-semibold text-purple-900  mb-3 flex items-center gap-2">
                       <Target size={18} />
                       Real Example
                     </h4>
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        <p className="text-sm text-gray-600  mb-2">
                           {metric.example.company}
                         </p>
                         <div className="flex items-center gap-3 mb-2">
-                          <span className="text-2xl font-bold text-purple-900 dark:text-purple-300">
+                          <span className="text-2xl font-bold text-purple-900 ">
                             {metric.example.value}
                           </span>
                           {getTrendIcon(metric.example.trend)}
                         </div>
-                        <p className="text-sm text-gray-700 dark:text-gray-300">
+                        <p className="text-sm text-gray-700 ">
                           {metric.example.analysis}
                         </p>
                       </div>
