@@ -269,7 +269,7 @@ const FundamentalsGuide = () => {
               className={`flex-1 min-w-[150px] flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === tab.id
                   ? 'bg-gradient-to-r from-blue-600 to-green-600 text-white shadow-md'
-                  : 'bg-gray-100  text-gray-700 dark:text-gray-300 hover:bg-gray-200 '
+                  : 'bg-gray-100  text-gray-700  '
               }`}
             >
               <Icon size={20} />
@@ -312,7 +312,7 @@ const FundamentalsGuide = () => {
                     <Icon className="text-white" size={24} />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                    <h3 className="text-xl font-bold text-gray-800 ">
                       {metric.name}
                     </h3>
                     <p className={`text-sm font-semibold ${metric.goodRange.color}`}>
