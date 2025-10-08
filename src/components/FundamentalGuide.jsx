@@ -305,7 +305,7 @@ const FundamentalsGuide = () => {
             >
               <button
                 onClick={() => toggleMetric(metric.id)}
-                className="w-full p-6 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors"
+                className="w-full p-6 flex items-center justify-between hover:bg-gray-50  transition-colors"
               >
                 <div className="flex items-center gap-4">
                   <div className="bg-gradient-to-br from-blue-500 to-green-500 p-3 rounded-lg">
@@ -327,41 +327,41 @@ const FundamentalsGuide = () => {
                 <div className="px-6 pb-6 space-y-6 border-t ">
                   {/* Formula */}
                   <div className="bg-blue-50  rounded-lg p-4 mt-4">
-                    <h4 className="font-semibold text-blue-900 dark:text-blue-300 mb-2">
+                    <h4 className="font-semibold text-blue-900  mb-2">
                       Formula
                     </h4>
-                    <code className="text-sm text-blue-800 dark:text-blue-400 font-mono">
+                    <code className="text-sm text-blue-800  font-mono">
                       {metric.formula}
                     </code>
                   </div>
 
                   {/* Interpretation Guide */}
                   <div>
-                    <h4 className="font-semibold text-gray-800 dark:text-white mb-3">
+                    <h4 className="font-semibold text-gray-800  mb-3">
                       How to Interpret
                     </h4>
                     <div className="grid md:grid-cols-3 gap-3">
                       <div className="bg-green-50  rounded-lg p-4 border-l-4 border-green-500">
-                        <div className="font-semibold text-green-700 dark:text-green-400 mb-1">
+                        <div className="font-semibold text-green-700  mb-1">
                           High Value
                         </div>
-                        <p className="text-sm text-green-600 dark:text-green-300">
+                        <p className="text-sm text-green-600 ">
                           {metric.interpretation.high}
                         </p>
                       </div>
                       <div className="bg-red-50  rounded-lg p-4 border-l-4 border-red-500">
-                        <div className="font-semibold text-red-700 dark:text-red-400 mb-1">
+                        <div className="font-semibold text-red-700  mb-1">
                           Low Value
                         </div>
-                        <p className="text-sm text-red-600 dark:text-red-300">
+                        <p className="text-sm text-red-600 ">
                           {metric.interpretation.low}
                         </p>
                       </div>
                       <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                        <div className="font-semibold text-blue-700 dark:text-blue-400 mb-1">
+                        <div className="font-semibold text-blue-700  mb-1">
                           Ideal Range
                         </div>
-                        <p className="text-sm text-blue-600 dark:text-blue-300">
+                        <p className="text-sm text-blue-600 ">
                           {metric.interpretation.ideal}
                         </p>
                       </div>
