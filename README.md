@@ -2,6 +2,42 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+# 📊 Stockify — Real-Time Stock Analytics Platform
+
+Stockify is a **real-time stock tracking and analysis platform** built using **Next.js** and **Tailwind CSS**.  
+It enables users to discover, analyze, and monitor Indian stocks with live market data, fundamental insights,  
+and interactive TradingView charts — all in one place.
+
+---
+
+## 🚀 Features
+
+- **📈 Real-Time Market Data**  
+  Fetches live stock prices, volume, and market trends using the Alpha Vantage API.
+
+- **📊 Fundamental Analysis**  
+  Displays key company metrics — P/E ratio, ROE, EPS, profit margins, and more.
+
+- **📉 TradingView Chart Integration**  
+  Interactive, professional-grade charts for advanced technical analysis.
+
+- **⭐ Smart Watchlists**  
+  Add and track your favorite stocks, with persistent data stored locally.
+
+- **💡 Clean & Responsive UI**  
+  Designed with Tailwind CSS for a modern, intuitive, and mobile-friendly experience.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**  
+- [Next.js 14+ (App Router)](https://nextjs.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- [Lucide Icons](https://lucide.dev/)  
+- [TradingView Widget](https://www.tradingview.com/widget/)  
+
+
 First, run the development server:
 
 ```bash
