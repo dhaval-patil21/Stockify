@@ -1,10 +1,10 @@
-import HeroSection from '@/pages/Home/HeroSection'
+import Home from '@/pages/Home'
 import React from 'react'
 
 const page = () => {
   return (
     <>
-    <HeroSection/>
+    <Home/>
     </>
   )
 }
