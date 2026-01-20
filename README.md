@@ -13,7 +13,7 @@ and interactive TradingView charts — all in one place.
 ## 🚀 Features
 
 - **📈 Real-Time Market Data**  
-  Fetches live stock prices, volume, and market trends using the Alpha Vantage API.
+  Fetches live stock prices, volume, and market trends .
 
 - **📊 Fundamental Analysis**  
   Displays key company metrics — P/E ratio, ROE, EPS, profit margins, and more.
