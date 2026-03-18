@@ -54,12 +54,6 @@ export default function HeroSection() {
     <div className="min-h-screen">
       {/* Hero Section with Transparent Widget Overlay */}
       <section className="relative bg-gradient-to-br from-slate-50 via-white to-emerald-50 py-20 overflow-hidden">
-        {/* Background Widget - Transparent */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="h-full w-full scale-110">
-            <TradingViewWidget />
-          </div>
-        </div>
 
         {/* Main Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
